@@ -26,7 +26,7 @@ scroll-behavior: smooth;
 
 /* Navigation Menu Css */
 nav{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     padding: 20px 0;
     font-family: 'Ubuntu' , sans-serif;
@@ -52,22 +52,23 @@ nav .navbar .logo a{
 nav.sticky .navbar .logo a{
     color: #fff;
 }
-nav .navbar .menu{
+nav .navbar .menu {
     display: flex;
-}
-nav .navbar .menu li{
-    margin: 0 8px;
+  }
+  nav .navbar .menu li {
+    margin-right: 8px;
     list-style: none;
-}
-.navbar .menu li a{
+  }
+  .navbar .menu li a {
     font-size: 18px;
-    font-size: 500;
+    font-weight: 500;
     color: #0e2431;
     transition: all 0.3s ease;
-}
-.navbar .menu li a:hover{
+  }
+  .navbar .menu li a:hover {
     color: #4070f4;
-}
+  }
+  
 nav.sticky .navbar .menu li a{
     color: #fff;
 }
@@ -79,6 +80,24 @@ nav.sticky .navbar .menu li a:hover{
     margin: 0 6px;
     color: #4070f4;
 }
+.media-con {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .center-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-icons a {
+    margin: 0 10px; /* Adds space horizontally between the icons */
+  }
+  
+  .center-icons a i {
+    font-size: 24px; /* Increases the size of the icons */
+  }
+    
 nav.sticky .media-icons a{
     color: #fff;
 }
@@ -142,6 +161,7 @@ nav .sticky .menu-btn{
     margin: 14px 0;
 }
 .home .button button{
+    
     outline: none;
     color: #fff;
     font-size: 25px;
@@ -156,6 +176,7 @@ nav .sticky .menu-btn{
     color: #4070F4;
     background-color: #fff;
     border-color: #4070F4;
+    cursor: pointer;
 }
 
 /* About Me Section CSS */
